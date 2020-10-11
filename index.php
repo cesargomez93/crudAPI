@@ -6,6 +6,9 @@ header("Access-Control-Allow-Methods: OPTIONS,GET,POST,PUT,DELETE");
 include "config.php";
 include "database.php";
 
+echo $_SERVER['REQUEST_METHOD'];
+exit();
+
 // Conexión con la base de datos
 $dbConn = connect($db);
 
